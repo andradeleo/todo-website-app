@@ -5,7 +5,7 @@ export const StyledTaskContainer = styled.section`
   max-width: 800px;
   width: 60%;
 
-  padding: 48px ;
+  padding: 48px;
 
   height: 95vh;
   margin-top: 5vh;
@@ -19,6 +19,25 @@ export const StyledTaskContainer = styled.section`
   justify-content: flex-start;
   flex-direction: column;
 
+  @media only screen and (max-width: 781px) {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+
+    position: absolute;
+    top: 450px;
+    padding: 24px;
+  }
+  @media only screen and (max-width: 500px) {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+
+    position: absolute;
+    top: 450px;
+    padding: 24px;
+  }
+
   .addTaskField {
     display: flex;
     justify-content: flex-start;
@@ -26,6 +45,10 @@ export const StyledTaskContainer = styled.section`
     padding: 0px 16px;
     width: 100%;
     gap: 16px;
+
+    @media only screen and (max-width: 920px) {
+      flex-direction: column;
+    }
 
     button {
     font-size: 24px;
@@ -45,6 +68,11 @@ export const StyledTaskContainer = styled.section`
     &:active {
       transform: scale(0.95);
     }
+
+    @media only screen and (max-width: 920px) {
+      width: 100%;
+      margin-bottom: 16px;
+    }
   }
   }
 
@@ -60,7 +88,7 @@ export const StyledTaskContainer = styled.section`
 
 
     button {
-      background: ${({theme }) => theme.primaryColor};
+      background: transparent/* ${({theme }) => theme.primaryColor} */;
       border: 1px solid ${({theme }) => theme.primaryColor};
       border-radius: 8px;
       padding: 6px 16px;
@@ -69,6 +97,8 @@ export const StyledTaskContainer = styled.section`
       font-size: 14px;
       letter-spacing: 1.3px;
       transition: all 0.3s;
+      width: 100%;
+      margin-top: 32px;
 
       &:hover {
         background-color: transparent;

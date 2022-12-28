@@ -27,4 +27,11 @@ export const StyledInput = styled.input`
     color: #d9d9d9;
     opacity: 0.7;
   }
+
+  @media only screen and (max-width: 500px) {
+    margin: 0px;
+  }
+  @media only screen and (max-width: 820px) {
+    margin: 0px;
+  }
 `;

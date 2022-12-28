@@ -7,11 +7,27 @@ export const MenuContainer = styled.div`
   justify-content: space-between;
 
   height: 100%;
+
+  @media only screen and (max-width: 781px) {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
 `;
 
 export const StyledList = styled.ul`
   padding: 8px;
   margin: 48px 0px;
+
+  @media only screen and (max-width: 1000px) {
+    margin: 0px;
+    padding: 0px;
+  }
+
 
   button {
     background: transparent;
@@ -28,6 +44,10 @@ export const StyledList = styled.ul`
     letter-spacing: 3px;
 
     color: ${({ theme }) => theme.textColorOptions};
+
+    @media only screen and (max-width: 1000px) {
+    font-size: 14px;
+  }
 
   .first-option {
     background: ${({button, theme }) => button ? "transparent" : theme.primaryColor};
@@ -48,6 +68,14 @@ export const StyledList = styled.ul`
     transition: all 0.5s;
     border-radius: 8px;
 
+    @media only screen and (max-width: 1000px) {
+    padding: 8px 16px;
+  }
+    @media only screen and (max-width: 500px) {
+    padding: 8px 32px;
+  }
+
+
     div {
       width: 32px;
       height: 32px;
@@ -58,6 +86,15 @@ export const StyledList = styled.ul`
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @media only screen and (max-width: 920px) {
+        display: none;
+      }
+      @media only screen and (max-width: 500px) {
+        display: flex;
+      }
+
+
     }
 
     &:hover {
@@ -78,10 +115,14 @@ export const ThemeContainer = styled.div`
   align-items: center;
   justify-content: space-between;
 
-
   span {
     color: ${({ theme }) => theme.textColorOptions};
     font-size: 16px;
     margin-right: 8px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    margin-top: 24px;
+    width: 100%;
   }
 `;

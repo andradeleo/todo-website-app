@@ -6,6 +6,22 @@ export const LogoTitle = styled.h1`
   font-weight: 700;
 
   color: ${({ theme }) => theme.textColorLogo};
+
+  @media only screen and (max-width: 1000px) {
+    margin-top: 32px;
+    font-size: 32px;
+  }
+  @media only screen and (max-width: 781px) {
+    text-align: center;
+    margin-top: 32px;
+    font-size: 32px;;
+  }
+  @media only screen and (max-width: 500px) {
+    text-align: center;
+    margin-top: 32px;
+    font-size: 32px;;
+  }
+
 `;
 
 export const StyledLogo = styled.span`
@@ -24,4 +40,19 @@ export const StyledSubTitle = styled.h2`
   letter-spacing: 3px;
 
   color: ${({ theme }) => theme.textColorLogo};
+
+  @media only screen and (max-width: 1000px) {
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+  @media only screen and (max-width: 781) {
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+  @media only screen and (max-width: 500px) {
+    text-align: center;
+    margin-bottom: 32px;
+
+    font-size: 16px;
+  }
 `;
