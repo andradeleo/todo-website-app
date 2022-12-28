@@ -5,7 +5,7 @@ App para controle de tarefas no dia a dia.
 
 
 O objetivo do projeto era por em prática toda a teoria que estudei sobre React, assim,
-consegui colocar em prática todos os fundamentos do React, como useState, renderização condicional, compontens, etc.
+consegui colocar em prática todos os fundamentos, como useState, renderização condicional, componentes, etc.
 
 
 ## Funcionalidades
